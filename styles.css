@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+  position: relative;
+}
+
+.window {
+  display: none;
+  flex-direction: column;
+  width: 40vw;
+  min-height: 20vh;
+  max-height: 70vh;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border: solid 2px #aaa;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  z-index: 2;
+  background-color: whitesmoke;
+}
+
+.window-content {
+  padding: 1rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.window-titlebar {
+  border-bottom: solid 2px #aaa;
+  border-radius: 0.2rem;
+  height: fit-content;
+  padding: 0.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#monitor {
+  width: 700px;
+  height: 450px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #aaa;
+  z-index: 1;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+#tela {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#conteudo-tela {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+#foto {
+  width: 150px;
+  background-color: #ddd;
+}
+
+#barra-tarefas {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.4rem;
+  border-top: 1px solid #aaa;
+}
