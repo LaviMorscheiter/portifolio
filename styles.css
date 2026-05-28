@@ -26,12 +26,6 @@ body {
   background-color: whitesmoke;
 }
 
-.window-content {
-  padding: 1rem;
-  overflow-y: auto;
-  flex: 1;
-}
-
 .window-titlebar {
   border-bottom: solid 2px #aaa;
   border-radius: 0.2rem;

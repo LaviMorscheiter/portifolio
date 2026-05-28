@@ -1,0 +1,53 @@
+.window-content {
+    font-size: 1.2rem;
+    overflow-y: auto;
+    flex: 1;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+  
+.window-content h2 {
+    font-size: 2rem;
+}
+  
+.window-content h3 {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+  
+.window-content h3 svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#sobre-header{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #aaa;
+}
+
+#sobre-header img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 50%;
+}
+
+#sobre-conteudo{
+  flex:1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+#sobre-info p {
+  margin: 0;
+}
+
+#sobre-info h2 {
+  margin-bottom: 0.3rem;
+}
