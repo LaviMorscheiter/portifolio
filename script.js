@@ -20,7 +20,7 @@ async function abrirJanela(id, titulo) {
   janela.innerHTML = `
     <div class="window-titlebar">
       <span>${titulo}</span>
-      <button>X</button>
+      <button>[X]</button>
     </div>
     <div class="window-content"></div>
   `;

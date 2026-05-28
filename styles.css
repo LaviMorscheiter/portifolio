@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: 'VT323', monospace;
   color: black;
   background-color: white;
   position: relative;
@@ -43,9 +43,17 @@ body {
   align-items: center;
 }
 
+.window-titlebar button{
+  background:none;
+  border: none;
+  cursor: pointer;
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+}
+
 #monitor {
-  width: 700px;
-  height: 450px;
+  width: 70vw;
+  height: 70vh;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -80,6 +88,27 @@ body {
 #barra-tarefas {
   display: flex;
   gap: 0.5rem;
-  padding: 0.4rem;
+  padding: 0.8rem;
   border-top: 1px solid #aaa;
+  align-items: center;
+}
+
+#icone-windows svg{
+  width: 32px;
+  height: 32px;
+}
+
+.icone {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.icone-apenas{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
 }
