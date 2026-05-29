@@ -8,6 +8,7 @@ body {
   color: black;
   background-color: white;
   position: relative;
+  overflow: hidden;
 }
 
 .window {
@@ -24,6 +25,7 @@ body {
   left: 150px;
   z-index: 2;
   background-color: whitesmoke;
+  user-select: none;
 }
 
 .window-titlebar {
@@ -64,6 +66,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 #conteudo-tela {

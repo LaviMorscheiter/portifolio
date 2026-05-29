@@ -9,3 +9,17 @@
 .tag:hover {
   transform: translateY(-4px);
 }
+
+#personagem{
+  position:absolute;
+  bottom: 40px;
+  height: 120px;
+  animation: caminhar 8s linear infinite;
+  z-index: 2;
+  mix-blend-mode: multiply;
+}
+
+@keyframes caminhar {
+  from {left: -200px;}
+  to {left: 100%;}
+}

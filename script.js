@@ -54,8 +54,14 @@ function tornarArrastavel(janelaElement) {
 
   document.addEventListener('mousemove', function (e) {
     if (arrastando) {
-      janelaElement.style.left = `${e.clientX - offsetX}px`;
-      janelaElement.style.top = `${e.clientY - offsetY}px`;
+      let novoX = e.clientX - offsetX;
+      let novoY = e.clientY - offsetY;
+
+      novoX = Math.max(0,Math.min(novoX,window.innerWidth - janelaElement.offsetWidth));
+      novoY = Math.max(0, Math.min(novoY, window.innerHeight - janelaElement.offsetHeight));
+
+      janelaElement.style.left = `${novoX}px`;
+      janelaElement.style.top = `${novoY}px`;
     }
   });
 
